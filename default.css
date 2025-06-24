@@ -1,5 +1,7 @@
 :root{
-    --cores: beige
+    --cores: beige;
+    --cores2: red;
+    --images: url("foto.jpg");
 }
 .tab-content {
     display: none;
@@ -7,7 +9,16 @@
     border: 1px solid #ccc;
     border-top: none;
 }
-
+.tab-content:hover{
+    color: #007bff;
+}
+.tab-button:hover{
+    color: aquamarine;
+    font-size: small;
+    background-size: cover;
+    border-radius: 10%;
+    border-color: darkkhaki;
+}
 .tab-content.active {
     display: block;
 }
@@ -30,8 +41,8 @@ body {
 }
 
 .tabs-container {
-    width: 100%;
-    max-width: 500px;
+    width: 1000px;
+    height: 700px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -71,4 +82,23 @@ body {
 .tab-button.active {
     background-color: #007bff;
     color: white;
+}
+html, body{
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+}
+.cousin{
+    width:100vw;
+    height: 100vh;
+    background-image: url("foto.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    transform: translateX(0);
+    transition: transform 2s ease-in-out;
+    z-index: 1;
+}
+.cousin:hover{
+    transform: translateX(-20px);
 }
