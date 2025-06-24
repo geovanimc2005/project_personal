@@ -7,32 +7,38 @@
     <link rel="stylesheet" href="default.css">
 </head>
 <body>
+    <div class="cousin" id="nerd">
+        <img src="foto.jpg" id="foto" class="foto">
+        <div class="tabs-container">
+            <div class="tabs-buttons" id="tabButtons">
+                <button class="tab-button active" data-tab="content1" onclick="data()">Aba Um</button>
+                <button class="tab-button" data-tab="content2">Aba Dois</button>
+                <button class="tab-button" data-tab="content3">Aba Três</button>
+            </div>
 
-    <div class="tabs-container">
-        <div class="tabs-buttons" id="tabButtons">
-            <button class="tab-button active" data-tab="content1" onclick="data()">Aba Um</button>
-            <button class="tab-button" data-tab="content2">Aba Dois</button>
-            <button class="tab-button" data-tab="content3">Aba Três</button>
-        </div>
+            <div id="content1" class="tab-content active">
+                <h2>Conteúdo da Aba Um</h2>
+                <p>Este é o conteúdo que aparece por padrão.</p>
+                <button id="botao">toato</button>
+                <p id="only" class="solutions"></p>
+                <textarea id="area" class="area" placeholder="funciona por favor"></textarea>
+            </div>
 
-        <div id="content1" class="tab-content active">
-            <h2>Conteúdo da Aba Um</h2>
-            <p>Este é o conteúdo que aparece por padrão.</p>
-        </div>
+            <div id="content2" class="tab-content">
+                <h2>Conteúdo da Aba Dois</h2>
+                <p>Este é o conteúdo da segunda aba.</p>
+                <p class="principal" id="principal"></p>
+                <button id="data-btn">asa morreu</button>
+            </div>
 
-        <div id="content2" class="tab-content">
-            <h2>Conteúdo da Aba Dois</h2>
-            <p>Este é o conteúdo da segunda aba.</p>
-            <p class="principal" id="principal"></p>
-            <button id="data-btn">asa morreu</button>
+            <div id="content3" class="tab-content">
+                <h2>Conteúdo da Aba Três</h2>
+                <p>Este é o conteúdo da terceira aba.</p>
+            </div>
         </div>
-
-        <div id="content3" class="tab-content">
-            <h2>Conteúdo da Aba Três</h2>
-            <p>Este é o conteúdo da terceira aba.</p>
-        </div>
+        <p class="error" id="error">err</p>
     </div>
-    <p class="error" id="error">err</p>
+    
     <script src="script.js"></script>
 </body>
 </html>
