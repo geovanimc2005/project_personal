@@ -78,9 +78,16 @@ async function salvar(){
     }, 100);
 }
 async function servidores(){
-    fetch("http://localhost:8000").then(codigos => {
-        console.log("funcionando");
-    });
+    
+    try{
+        const response = await fetch("http://localhost:8000/");
+        if(response.ok){
+            const data = await response.json();
+            console.log(data);
+        }
+    }catch(error){
+        console.log(error);
+    }
 }
 const square = t => Math.sign(Math.sin(t));
 button1.addEventListener('click', () =>{
