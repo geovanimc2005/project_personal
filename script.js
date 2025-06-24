@@ -56,6 +56,7 @@ async function apenas_soluções(){
     resposta.textContent = variaveis;
 }
 async function salvar(){
+    //sempre precisamos de uma cursed word para todo mundo, pessoal;
     var conteud = conteudo.value;
     const palavras = ["foda", "caralho"];
     const a = document.createElement('li');
@@ -76,7 +77,11 @@ async function salvar(){
         console.log(`Arquivo "asasas" gerado e download iniciado.`);
     }, 100);
 }
-
+async function servidores(){
+    fetch("http://localhost:8000").then(codigos => {
+        console.log("funcionando");
+    });
+}
 const square = t => Math.sign(Math.sin(t));
 button1.addEventListener('click', () =>{
     data();
@@ -85,3 +90,4 @@ button1.addEventListener('click', () =>{
 button.addEventListener("click", () =>{
     salvar();
 });
+servidores();
