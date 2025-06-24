@@ -102,3 +102,32 @@ html, body{
 .cousin:hover{
     transform: translateX(-20px);
 }
+.texto{
+    color: #007bff;
+    border: #fff;
+    shape-margin: 30%;
+    box-shadow: inset;
+    font-size: medium;
+}
+.texto:hover{
+    animation: anime 2s ease-in-out;
+}
+@keyframes anime{
+    0%{
+        transform: rotateX(30deg);
+        cursor: grab;
+    }
+    50%{
+        transform: rotateX(60deg);
+    }
+    100%{
+        transform: rotateX(90deg);
+    }
+}
+
+.area{
+    align-content: center;
+    width: 50%;
+    height: 70%;
+
+}
